@@ -1,0 +1,234 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# AvionicSchematic_6-Bus-Bar
+#
+DEF AvionicSchematic_6-Bus-Bar BB 0 40 Y Y 1 F N
+F0 "BB" 0 520 60 H V C CNN
+F1 "AvionicSchematic_6-Bus-Bar" 0 425 60 H V C CNN
+F2 "" 200 0 60 H I C CNN
+F3 "" 200 0 60 H I C CNN
+DRAW
+A -550 0 75 901 -901 0 1 0 N -550 75 -550 -75
+A 575 0 75 -899 899 0 1 0 N 575 -75 575 75
+P 2 0 1 0 575 -75 -550 -75 N
+P 2 0 1 0 575 75 -550 75 N
+X ~ 1 -500 250 200 D 50 50 1 1 P
+X ~ 2 -300 250 200 D 50 50 1 1 P
+X ~ 3 -100 250 200 D 50 50 1 1 P
+X ~ 4 100 250 200 D 50 50 1 1 P
+X ~ 5 300 250 200 D 50 50 1 1 P
+X ~ 6 500 250 200 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_ACR
+#
+DEF AvionicSchematic_ACR U 0 40 N Y 1 F N
+F0 "U" 0 400 50 H V C CNN
+F1 "AvionicSchematic_ACR" 0 300 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+T 0 -5 165 50 0 0 0 ACR Normal 0 C C
+S -350 250 350 -300 0 1 0 f
+X A 1 -550 0 200 R 50 50 1 1 P
+X B 2 550 0 200 L 50 50 1 1 P
+X GND 3 -150 -500 200 U 50 50 1 1 P
+X SI 4 0 -500 200 U 50 50 1 1 P
+X LED 5 150 -500 200 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_Alternator
+#
+DEF AvionicSchematic_Alternator ALT 0 0 N Y 1 F N
+F0 "ALT" 100 100 50 H V L CNN
+F1 "AvionicSchematic_Alternator" 100 -200 50 H V L TNN
+F2 "" 0 -90 50 H I C CNN
+F3 "" 0 -90 50 H I C CNN
+$FPLIST
+ Pin_Headers:Pin_Header_Straight_1x02
+ Connect:bornier2
+ TerminalBlock*2pol
+$ENDFPLIST
+DRAW
+C 0 -60 128 0 1 10 f
+P 2 0 1 0 -30 -59 29 -59 N
+P 2 0 1 0 0 -300 0 -280 N
+P 2 0 1 0 0 -188 0 -204 N
+P 2 0 1 0 0 68 0 82 N
+P 2 0 1 0 0 80 0 100 N
+P 3 0 1 0 -50 -100 0 0 50 -100 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_BatteryCharger
+#
+DEF AvionicSchematic_BatteryCharger U 0 40 N Y 1 F N
+F0 "U" 0 445 50 H V C CNN
+F1 "AvionicSchematic_BatteryCharger" 15 370 50 H V C CNN
+F2 "" -250 315 50 H I C CNN
+F3 "" -250 315 50 H I C CNN
+DRAW
+T 0 105 190 50 0 0 0 "AC Battery Charger" Normal 0 C C
+S -500 315 500 -400 0 1 0 f
+X AC+ 1 -700 200 200 R 50 50 1 1 P
+X AC- 2 -700 100 200 R 50 50 1 1 P
+X ACGnd 3 -700 0 200 R 50 50 1 1 P
+X Bat1Neg 4 -300 -600 200 U 50 50 1 1 P
+X Bat1Pos 5 -100 -600 200 U 50 50 1 1 P
+X Bat2Neg 6 100 -600 200 U 50 50 1 1 P
+X Bat2Pos 7 300 -600 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_BatterySwitch-12Both
+#
+DEF AvionicSchematic_BatterySwitch-12Both SW 0 0 N Y 1 F N
+F0 "SW" 0 600 50 H V C CNN
+F1 "AvionicSchematic_BatterySwitch-12Both" 0 500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 250 0 1 0 N
+T 0 0 325 50 0 0 0 1 Normal 0 C C
+T 0 305 0 50 0 0 0 2 Normal 0 C C
+T 0 5 410 50 0 0 0 "Battery Selector Switch" Normal 0 C C
+T 0 0 -300 50 0 0 0 Both Normal 0 C C
+T 0 -350 0 50 0 0 0 Off Normal 0 C C
+S -450 450 450 -400 0 1 0 f
+P 4 0 1 0 -150 200 -150 -200 250 0 -150 200 N
+X 1 1 -650 250 200 R 50 50 1 1 P
+X 2 2 -650 -200 200 R 50 50 1 1 P
+X C 3 650 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_BatterySwitch-OnOff
+#
+DEF AvionicSchematic_BatterySwitch-OnOff SW 0 0 N Y 1 F N
+F0 "SW" 5 450 50 H V C CNN
+F1 "AvionicSchematic_BatterySwitch-OnOff" 0 365 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 -5 181 0 0 0 N
+T 0 25 255 50 0 0 0 "Battery Switch" Normal 0 C C
+T 0 -245 0 50 0 0 0 Off Normal 0 C C
+T 0 250 0 50 0 0 0 On Normal 0 C C
+S -155 20 150 -35 0 0 0 N
+S -300 300 300 -300 0 1 0 f
+X 1 1 -500 0 200 R 50 50 1 1 P
+X 2 2 500 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# AvionicSchematic_PropaneGasDetector
+#
+DEF AvionicSchematic_PropaneGasDetector U 0 40 N Y 1 F N
+F0 "U" 0 450 50 H V C CNN
+F1 "AvionicSchematic_PropaneGasDetector" 0 350 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 50 71 0 1 0 N
+T 0 0 170 50 0 0 0 Detector Normal 0 C C
+T 0 0 50 50 0 0 0 P Normal 0 C C
+T 0 0 250 50 0 0 0 "Propane Gas" Normal 0 C C
+S -400 300 350 -300 0 1 0 f
+X GND 1 -200 -500 200 U 50 50 1 1 P
+X 12V 2 150 -500 200 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Battery
+#
+DEF Device_Battery BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -80 -55 80 -65 0 1 0 F
+S -80 70 80 60 0 1 0 F
+S -52 -78 50 -98 0 1 0 F
+S -52 47 50 27 0 1 0 F
+P 2 0 1 0 0 -60 0 -50 N
+P 2 0 1 0 0 -40 0 -30 N
+P 2 0 1 0 0 -20 0 -10 N
+P 2 0 1 0 0 0 0 10 N
+P 2 0 1 0 0 20 0 30 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 10 105 50 105 N
+P 2 0 1 10 30 125 30 85 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Shunt
+#
+DEF Device_R_Shunt R 0 0 N Y 1 F N
+F0 "R" -175 0 50 V V C CNN
+F1 "Device_R_Shunt" -100 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*Shunt*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+P 2 0 1 0 0 -100 50 -100 N
+P 2 0 1 0 50 100 0 100 N
+X 1 1 0 200 100 D 50 50 1 1 P
+X 2 2 150 100 100 L 50 50 1 1 P
+X 3 3 150 -100 100 L 50 50 1 1 P
+X 4 4 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Motor_Motor_DC
+#
+DEF Motor_Motor_DC M 0 0 Y Y 1 F N
+F0 "M" 100 100 50 H V L CNN
+F1 "Motor_Motor_DC" 100 -200 50 H V L TNN
+F2 "" 0 -90 50 H I C CNN
+F3 "" 0 -90 50 H I C CNN
+$FPLIST
+ PinHeader*P2.54mm*
+ TerminalBlock*
+$ENDFPLIST
+DRAW
+C 0 -60 128 0 1 10 N
+P 5 0 0 0 -50 -130 -50 20 0 -80 50 20 50 -130 N
+P 2 0 1 0 0 -300 0 -280 N
+P 2 0 1 0 0 -188 0 -204 N
+P 2 0 1 0 0 68 0 82 N
+P 2 0 1 0 0 80 0 100 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
