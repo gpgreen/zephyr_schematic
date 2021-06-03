@@ -1,0 +1,395 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1225 3250 0    50   Input ~ 0
+DCBatteryPos
+Text HLabel 1200 6650 0    50   Input ~ 0
+DCBatteryNeg
+$Comp
+L AvionicSchematic:MarineVHF U5
+U 1 1 60AB06FA
+P 10175 1075
+F 0 "U5" H 10175 1490 50  0000 C CNN
+F 1 "MarineVHF" H 10175 1399 50  0000 C CNN
+F 2 "" H 10325 1125 50  0001 C CNN
+F 3 "" H 10325 1125 50  0001 C CNN
+	1    10175 1075
+	1    0    0    -1  
+$EndComp
+Text HLabel 3200 1025 0    50   BiDi ~ 0
+UTP
+$Comp
+L Device:CircuitBreaker_1P CB1
+U 1 1 60AC2871
+P 3750 3300
+F 0 "CB1" V 3485 3300 50  0000 C CNN
+F 1 "20A - Cabin Lights" V 3575 3425 50  0000 C CNN
+F 2 "" H 3750 3300 50  0001 C CNN
+F 3 "~" H 3750 3300 50  0001 C CNN
+	1    3750 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB2
+U 1 1 60AC66C5
+P 3750 3675
+F 0 "CB2" V 3485 3675 50  0000 C CNN
+F 1 "15A - Nav Lights" V 3575 3775 50  0000 C CNN
+F 2 "" H 3750 3675 50  0001 C CNN
+F 3 "~" H 3750 3675 50  0001 C CNN
+	1    3750 3675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB3
+U 1 1 60AC734A
+P 3750 4050
+F 0 "CB3" V 3485 4050 50  0000 C CNN
+F 1 "15A - Steaming Light" V 3575 4225 50  0000 C CNN
+F 2 "" H 3750 4050 50  0001 C CNN
+F 3 "~" H 3750 4050 50  0001 C CNN
+	1    3750 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB4
+U 1 1 60AC7AF9
+P 3750 4425
+F 0 "CB4" V 3485 4425 50  0000 C CNN
+F 1 "15A - Anchor Light" V 3575 4550 50  0000 C CNN
+F 2 "" H 3750 4425 50  0001 C CNN
+F 3 "~" H 3750 4425 50  0001 C CNN
+	1    3750 4425
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB5
+U 1 1 60AC8530
+P 3750 4800
+F 0 "CB5" V 3485 4800 50  0000 C CNN
+F 1 "15A - Inst Lights" V 3575 4900 50  0000 C CNN
+F 2 "" H 3750 4800 50  0001 C CNN
+F 3 "~" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB6
+U 1 1 60AC9195
+P 3750 5175
+F 0 "CB6" V 3485 5175 50  0000 C CNN
+F 1 "10A - Electronics" V 3575 5275 50  0000 C CNN
+F 2 "" H 3750 5175 50  0001 C CNN
+F 3 "~" H 3750 5175 50  0001 C CNN
+	1    3750 5175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB7
+U 1 1 60AC9627
+P 3750 5800
+F 0 "CB7" V 3485 5800 50  0000 C CNN
+F 1 "15A - Water Pump" V 3575 5925 50  0000 C CNN
+F 2 "" H 3750 5800 50  0001 C CNN
+F 3 "~" H 3750 5800 50  0001 C CNN
+	1    3750 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CircuitBreaker_1P CB8
+U 1 1 60ACA204
+P 3750 6175
+F 0 "CB8" V 3485 6175 50  0000 C CNN
+F 1 "5A - DC Outlets" V 3575 6275 50  0000 C CNN
+F 2 "" H 3750 6175 50  0001 C CNN
+F 3 "~" H 3750 6175 50  0001 C CNN
+	1    3750 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES1
+U 1 1 60ACC1EB
+P 2500 2700
+F 0 "MES1" H 2653 2746 50  0000 L CNN
+F 1 "Battery Test" H 2653 2655 50  0000 L CNN
+F 2 "" V 2500 2800 50  0001 C CNN
+F 3 "~" V 2500 2800 50  0001 C CNN
+	1    2500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA1
+U 1 1 60ACFBB3
+P 1925 2700
+F 0 "LA1" H 2053 2746 50  0000 L CNN
+F 1 "Lamp" H 2053 2655 50  0000 L CNN
+F 2 "" V 1925 2800 50  0001 C CNN
+F 3 "~" V 1925 2800 50  0001 C CNN
+	1    1925 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60AD05B3
+P 4725 2400
+F 0 "D1" H 4718 2145 50  0000 C CNN
+F 1 "Red LED" H 4718 2236 50  0000 C CNN
+F 2 "" H 4725 2400 50  0001 C CNN
+F 3 "~" H 4725 2400 50  0001 C CNN
+	1    4725 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60AD13EB
+P 4725 2750
+F 0 "R1" V 4518 2750 50  0000 C CNN
+F 1 "680" V 4609 2750 50  0000 C CNN
+F 2 "" V 4655 2750 50  0001 C CNN
+F 3 "~" H 4725 2750 50  0001 C CNN
+	1    4725 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW3
+U 1 1 60AD4286
+P 3600 2700
+F 0 "SW3" H 3600 2985 50  0000 C CNN
+F 1 "Battery Volt Test" H 3600 2894 50  0000 C CNN
+F 2 "" H 3600 2700 50  0001 C CNN
+F 3 "~" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3300 3450 3675
+Connection ~ 3450 3675
+Wire Wire Line
+	3450 3675 3450 4050
+Connection ~ 3450 4050
+Wire Wire Line
+	3450 4050 3450 4425
+Connection ~ 3450 4425
+Wire Wire Line
+	3450 4425 3450 4800
+Connection ~ 3450 4800
+Wire Wire Line
+	3450 4800 3450 5175
+Wire Wire Line
+	3450 5175 3175 5175
+Wire Wire Line
+	3175 5175 3175 5800
+Wire Wire Line
+	3175 5800 3450 5800
+Connection ~ 3450 5175
+Wire Wire Line
+	3450 5800 3450 6175
+Connection ~ 3450 5800
+Wire Wire Line
+	4875 2400 4875 2750
+Wire Wire Line
+	3400 2700 3200 2700
+Wire Wire Line
+	3200 2700 3200 2375
+Wire Wire Line
+	3200 2375 2500 2375
+Wire Wire Line
+	2500 2375 2500 2500
+Connection ~ 2500 2500
+Wire Wire Line
+	1225 3250 3200 3250
+Wire Wire Line
+	3200 3250 3200 3675
+Wire Wire Line
+	3200 3675 3450 3675
+$Comp
+L Device:Lamp LA2
+U 1 1 60B08CBD
+P 8975 5875
+F 0 "LA2" H 9103 5921 50  0000 L CNN
+F 1 "Port Nav" H 9103 5830 50  0000 L CNN
+F 2 "" V 8975 5975 50  0001 C CNN
+F 3 "~" V 8975 5975 50  0001 C CNN
+	1    8975 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA3
+U 1 1 60B0B10C
+P 9700 5875
+F 0 "LA3" H 9828 5921 50  0000 L CNN
+F 1 "Stbd Nav" H 9828 5830 50  0000 L CNN
+F 2 "" V 9700 5975 50  0001 C CNN
+F 3 "~" V 9700 5975 50  0001 C CNN
+	1    9700 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA4
+U 1 1 60B0B582
+P 10325 5875
+F 0 "LA4" H 10453 5921 50  0000 L CNN
+F 1 "Stern" H 10453 5830 50  0000 L CNN
+F 2 "" V 10325 5975 50  0001 C CNN
+F 3 "~" V 10325 5975 50  0001 C CNN
+	1    10325 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA5
+U 1 1 60B0B85F
+P 8975 4600
+F 0 "LA5" H 9103 4646 50  0000 L CNN
+F 1 "Anchor" H 9103 4555 50  0000 L CNN
+F 2 "" V 8975 4700 50  0001 C CNN
+F 3 "~" V 8975 4700 50  0001 C CNN
+	1    8975 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Lamp LA6
+U 1 1 60B0BC8C
+P 8975 5200
+F 0 "LA6" H 9103 5246 50  0000 L CNN
+F 1 "Steaming" H 9103 5155 50  0000 L CNN
+F 2 "" V 8975 5300 50  0001 C CNN
+F 3 "~" V 8975 5300 50  0001 C CNN
+	1    8975 5200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	1450 2100 5250 2100
+Wire Notes Line style solid
+	5250 2100 5250 6900
+Wire Notes Line style solid
+	5250 6900 1450 6900
+Wire Notes Line style solid
+	1450 6900 1450 2100
+Text Notes 1475 2025 0    50   ~ 0
+DC Nav Station Panel
+Wire Wire Line
+	6775 5675 8975 5675
+Wire Wire Line
+	8975 5675 9700 5675
+Connection ~ 8975 5675
+Wire Wire Line
+	9700 5675 10325 5675
+Connection ~ 9700 5675
+Wire Wire Line
+	7625 5000 8975 5000
+Wire Wire Line
+	8300 4400 8975 4400
+Wire Wire Line
+	1925 2500 2500 2500
+$Comp
+L AvionicSchematic:BUS-BAR BB?
+U 1 1 60B5FAFF
+P 2125 4675
+F 0 "BB?" V 2981 4675 60  0000 C CNN
+F 1 "BUS-BAR" V 3087 4675 60  0000 C CNN
+F 2 "" H 2125 4675 60  0001 C CNN
+F 3 "" H 2125 4675 60  0001 C CNN
+	1    2125 4675
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 60B6F248
+P 6425 1550
+F 0 "F?" V 6228 1550 50  0000 C CNN
+F 1 "Fuse" V 6319 1550 50  0000 C CNN
+F 2 "" V 6355 1550 50  0001 C CNN
+F 3 "~" H 6425 1550 50  0001 C CNN
+	1    6425 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 60B70159
+P 6425 1850
+F 0 "F?" V 6228 1850 50  0000 C CNN
+F 1 "Fuse" V 6319 1850 50  0000 C CNN
+F 2 "" V 6355 1850 50  0001 C CNN
+F 3 "~" H 6425 1850 50  0001 C CNN
+	1    6425 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 60B70574
+P 6425 2150
+F 0 "F?" V 6228 2150 50  0000 C CNN
+F 1 "Fuse" V 6319 2150 50  0000 C CNN
+F 2 "" V 6355 2150 50  0001 C CNN
+F 3 "~" H 6425 2150 50  0001 C CNN
+	1    6425 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 60B7135F
+P 6425 2475
+F 0 "F?" V 6228 2475 50  0000 C CNN
+F 1 "Fuse" V 6319 2475 50  0000 C CNN
+F 2 "" V 6355 2475 50  0001 C CNN
+F 3 "~" H 6425 2475 50  0001 C CNN
+	1    6425 2475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 60B71768
+P 6425 2775
+F 0 "F?" V 6228 2775 50  0000 C CNN
+F 1 "Fuse" V 6319 2775 50  0000 C CNN
+F 2 "" V 6355 2775 50  0001 C CNN
+F 3 "~" H 6425 2775 50  0001 C CNN
+	1    6425 2775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3675 6775 3675
+Wire Wire Line
+	4050 4425 8300 4425
+Wire Wire Line
+	8300 4425 8300 4400
+Wire Wire Line
+	6775 3675 6775 5675
+Wire Wire Line
+	4050 4050 7625 4050
+Wire Wire Line
+	7625 4050 7625 5000
+Wire Notes Line style solid
+	6000 1225 6825 1225
+Wire Notes Line style solid
+	6825 1225 6825 3000
+Wire Notes Line style solid
+	6825 3000 6000 3000
+Wire Notes Line style solid
+	6000 3000 6000 1225
+Text Notes 6025 1175 0    50   ~ 0
+Nav Station Fuse Block
+$Comp
+L AvionicSchematic:MarineVHF U6
+U 1 1 60BAADCF
+P 10150 2225
+F 0 "U6" H 10150 2640 50  0000 C CNN
+F 1 "FM Radio" H 10150 2549 50  0000 C CNN
+F 2 "" H 10300 2275 50  0001 C CNN
+F 3 "" H 10300 2275 50  0001 C CNN
+	1    10150 2225
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
